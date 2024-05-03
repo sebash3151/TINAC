@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class ritualselfdestruct : MonoBehaviour
 {
-    GameObject hijo;
+    [SerializeField] GameObject hijo;
 
     private void Start()
     {
-        hijo = GetComponentInChildren<GameObject>();
+        //hijo = GetComponentInChildren<GameObject>();
     }
 
     private void Update()
     {
         if (hijo != null)
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 }

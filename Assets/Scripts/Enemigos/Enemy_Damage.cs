@@ -15,6 +15,7 @@ public class Enemy_Damage : MonoBehaviour
     float contadorDos = 0;
     [SerializeField] Image stamina;
     Color morado = new Color(1f, 0, 1f);
+    [SerializeField] Color verde;
     private void Start()
     {
         vida = FindObjectOfType<Player_Life>();
@@ -67,6 +68,7 @@ public class Enemy_Damage : MonoBehaviour
                         {
                             movimiento.movementSpeed = movimiento.movimientonormal;
                             contadorDos = 0;
+                            stamina.color = verde;
                         }
 
                     }

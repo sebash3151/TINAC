@@ -21,12 +21,19 @@ public class Ritos : MonoBehaviour
         {
             tiempoDestruccion = tiempoDestruccion * 2;
         }
-        carga.maxValue = tiempoDestruccion;
+        if (carga != null)
+        {
+            carga.maxValue = tiempoDestruccion;
+        }
     }
 
     private void Update()
     {
-        carga.value = contador;
+        if (carga != null)
+        {
+            carga.value = contador;
+
+        }
     }
 
     private void OnTriggerStay(Collider other)

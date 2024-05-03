@@ -14,7 +14,7 @@ namespace ProBuilder.ExampleActions
 	/// <summary>
 	/// This is the actual action that will be executed.
 	/// </summary>
-	public class MakeFacesDoubleSided : MenuAction
+	/*public class MakeFacesDoubleSided : MenuAction
 	{
 		public override ToolbarGroup group { get { return ToolbarGroup.Geometry; } }
 		public override Texture2D icon { get { return null; } }
@@ -71,5 +71,5 @@ namespace ProBuilder.ExampleActions
 
 			return new ActionResult(ActionResult.Status.Success, "Make Faces Double-Sided");
 		}
-	}
+	}*/
 }

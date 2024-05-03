@@ -12,7 +12,7 @@ using UnityEngine.Rendering;
 // When creating your own actions use your own namespace.
 namespace ProBuilder.ExampleActions
 {
-	[ProBuilderMenuAction]
+	/*[ProBuilderMenuAction]
 	sealed class CreateShadowObject : MenuAction
 	{
 		public override ToolbarGroup group { get { return ToolbarGroup.Object; } }
@@ -104,7 +104,7 @@ namespace ProBuilder.ExampleActions
 		/// Perform the action.
 		/// </summary>
 		/// <returns>Return a pb_ActionResult indicating the success/failure of action.</returns>
-		public override ActionResult DoAction()
+		/*public override ActionResult DoAction()
 		{
 			ShadowCastingMode shadowMode = (ShadowCastingMode) EditorPrefs.GetInt("pb_CreateShadowObject_shadowMode", (int) ShadowCastingMode.ShadowsOnly);
 			float extrudeDistance = EditorPrefs.GetFloat("pb_CreateShadowObject_volumeSize", .08f);
@@ -185,6 +185,6 @@ namespace ProBuilder.ExampleActions
 			Undo.RegisterCreatedObjectUndo(newShadowMesh.gameObject, "Create Shadow Object");
 			return newShadowMesh;
 		}
-	}
+	}*/
 }
 
